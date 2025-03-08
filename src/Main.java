@@ -11,8 +11,6 @@ public class Main {
 		
 		//2. Open website
 		driver.get("https://demo.opencart.com/");
-		//example website
-//		driver.get("http://127.0.0.1:5500/homepage.html");
 		
 	    //3. Fetch the title
 		String actualTitle = driver.getTitle();
@@ -22,11 +20,6 @@ public class Main {
 		String expectedTitle = "Your Store";
 		System.out.println("Expected Title : " + expectedTitle);
 		System.out.println("Actual Title : " + actualTitle);
-		
-		//example website
-//		String expectedTitle = "KFC";
-//		System.out.println("Expected Title : " + expectedTitle);
-//		System.out.println("Actual Title : " + actualTitle);
 		
 		if(expectedTitle.contentEquals(actualTitle))
 		{
